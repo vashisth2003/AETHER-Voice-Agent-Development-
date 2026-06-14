@@ -480,6 +480,10 @@ function addMessage(text, sender, steps = []) {
         msgDiv.appendChild(reasoningDiv);
     }
 
+  chatBox.appendChild(msgDiv);
+    chatBox.scrollTop = chatBox.scrollHeight;
+}
+
 
 
 Next Steps to Launch
@@ -488,6 +492,4 @@ Ensure you have Python installed, then open your terminal inside the backend fol
 Start the server with uvicorn main:app --reload.
 Open the frontend/index.html file in Chrome/Edge, grant microphone permissions, and start talking to Aether!
 
-    chatBox.appendChild(msgDiv);
-    chatBox.scrollTop = chatBox.scrollHeight;
-}
+  
